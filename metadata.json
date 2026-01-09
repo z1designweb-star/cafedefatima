@@ -1,7 +1,5 @@
 {
   "name": "Café de Fátima - Cafés Especiais",
   "description": "Loja de cafés especiais do Brasil, focada em grãos selecionados do Sul de Minas e Chapada Diamantina.",
-  "requestFramePermissions": [
-    "camera"
-  ]
+  "requestFramePermissions": []
 }
