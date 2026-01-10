@@ -17,7 +17,11 @@ function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
-      if (hash === '#store' || hash === '#subscriptions') {
+      
+      // Reconhece hashes de loja e suas subseções
+      const isStore = hash === '#store' || hash === '#vendas-avulsas' || hash === '#planos-assinatura' || hash === '#subscriptions';
+      
+      if (isStore) {
         setCurrentView('store');
       } else if (hash === '#contact') {
         setCurrentView('contact');
@@ -28,7 +32,11 @@ function App() {
       } else {
         setCurrentView('home');
       }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Só rola para o topo se não estivermos tentando ir para uma seção específica com ID
+      if (hash === '' || hash === '#' || hash === '#store' || hash === '#contact' || hash === '#home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     };
 
     window.addEventListener('hashchange', handleHashChange);
@@ -45,7 +53,7 @@ function App() {
         {currentView === 'home' && (
           <>
             <section id="hero">
-              <Hero onCtaClick={() => window.location.hash = '#store'} />
+              <Hero onCtaClick={() => window.location.hash = '#vendas-avulsas'} />
             </section>
             
             <section id="regions" className="py-24 bg-[#fcfaf7]">

@@ -10,8 +10,8 @@ const Header: React.FC<HeaderProps> = ({ isHome = true }) => {
 
   const menuItems = [
     { label: 'INÍCIO', href: '#' },
-    { label: 'COMPRAR CAFÉ', href: '#store' },
-    { label: 'ASSINATURAS', href: '#store' },
+    { label: 'COMPRAR CAFÉ', href: '#vendas-avulsas' },
+    { label: 'ASSINATURAS', href: '#planos-assinatura' },
     { label: 'CONTATO', href: '#contact' },
   ];
 

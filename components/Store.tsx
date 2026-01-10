@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PRODUCTS } from '../constants';
 import { CoffeeOrigin, CoffeeGrind, Product } from '../types';
 import Subscriptions from './Subscriptions';
@@ -15,6 +15,20 @@ const Store: React.FC = () => {
 
   const whatsappNumber = "5581991605039";
 
+  // Efeito para rolar suavemente para a seção se houver um hash ao montar o componente
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === '#vendas-avulsas' || hash === '#planos-assinatura') {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        // Pequeno timeout para garantir que o DOM esteja pronto após a troca de view
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <div className="bg-stone-50 min-h-screen py-16">
       <div className="container mx-auto px-4">
@@ -23,8 +37,8 @@ const Store: React.FC = () => {
           <p className="text-stone-600 font-light">Explore nossa curadoria de cafés especiais brasileiros.</p>
         </header>
 
-        {/* Vendas Individuais - AGORA PRIMEIRO */}
-        <section className="mb-24">
+        {/* Vendas Individuais */}
+        <section id="vendas-avulsas" className="mb-24 scroll-mt-24">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
             <div className="flex items-center space-x-4">
               <h2 className="text-3xl font-serif text-coffee-dark">Vendas Avulsas</h2>
@@ -117,8 +131,8 @@ const Store: React.FC = () => {
           </div>
         </section>
 
-        {/* Assinaturas - AGORA SEGUNDO */}
-        <section className="mb-24">
+        {/* Assinaturas */}
+        <section id="planos-assinatura" className="mb-24 scroll-mt-24">
           <div className="flex items-center space-x-4 mb-10">
             <h2 className="text-3xl font-serif text-coffee-dark">Planos de Assinatura</h2>
             <div className="h-px flex-grow bg-stone-200"></div>
