@@ -65,19 +65,22 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button 
-              onClick={onCtaClick}
-              className="group bg-coffee-gold hover:bg-[#b45309] text-white px-10 py-5 rounded font-bold text-sm tracking-widest uppercase transition-all flex items-center justify-center space-x-3 shadow-lg"
-            >
-              <span>Comprar Agora</span>
-              <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </button>
+          <div className="flex flex-col sm:flex-row gap-5 pt-4">
             <a 
-              href="#store" 
-              className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-10 py-5 rounded font-bold text-sm tracking-widest uppercase transition-all text-center"
+              href="#vendas-avulsas"
+              className="group bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-5 rounded-md font-bold text-sm tracking-[0.1em] uppercase transition-all flex items-center justify-center space-x-4 shadow-lg"
             >
-              Ver Assinaturas
+              <span>COMPRAR AGORA</span>
+              <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+            
+            <a 
+              href="#planos-assinatura" 
+              className="bg-black/40 backdrop-blur-md border border-white/20 hover:bg-black/60 text-white px-8 py-5 rounded-md font-bold text-sm tracking-[0.1em] uppercase transition-all text-center flex items-center justify-center"
+            >
+              VER ASSINATURAS
             </a>
           </div>
         </div>
