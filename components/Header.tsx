@@ -1,7 +1,11 @@
 
 import React, { useState } from 'react';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  isHome?: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ isHome = true }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
@@ -11,8 +15,13 @@ const Header: React.FC = () => {
     { label: 'CONTATO', href: '#contact' },
   ];
 
+  // Se for home, usamos absolute e transparente. Se não, usamos relative/fixed com fundo escuro.
+  const headerClasses = isHome 
+    ? "absolute top-0 left-0 right-0 z-50 bg-transparent py-6"
+    : "relative z-50 bg-coffee-dark py-6 shadow-xl border-b border-white/5";
+
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 bg-transparent py-6">
+    <header className={headerClasses}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo/Brand */}
         <a href="#" className="flex items-center space-x-2 group">

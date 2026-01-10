@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#1a120b]">
-      <Header />
+      <Header isHome={currentView === 'home'} />
       
       <main className="flex-grow">
         {currentView === 'home' && (
