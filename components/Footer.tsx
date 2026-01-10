@@ -69,20 +69,20 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-widest mb-6">Navegação</h3>
             <ul className="space-y-4 text-stone-400 text-sm">
-              <li><a href="#" className="hover:text-white">Início</a></li>
-              <li><a href="#store" className="hover:text-white">Comprar Café</a></li>
-              <li><a href="#store" className="hover:text-white">Assinaturas</a></li>
-              <li><a href="#contact" className="hover:text-white">Contato</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Início</a></li>
+              <li><a href="#vendas-avulsas" className="hover:text-white transition-colors">Comprar Café</a></li>
+              <li><a href="#planos-assinatura" className="hover:text-white transition-colors">Assinaturas</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-sm font-bold uppercase tracking-widest mb-6">Regiões</h3>
             <ul className="space-y-4 text-stone-400 text-sm">
-              <li><a href="#regions" className="hover:text-white">Sul de Minas Gerais</a></li>
-              <li><a href="#regions" className="hover:text-white">Chapada Diamantina</a></li>
-              <li><a href="#regions" className="hover:text-white">Unique Cafés</a></li>
-              <li><a href="#regions" className="hover:text-white">Latitude 13°</a></li>
+              <li><a href="#regions" className="hover:text-white transition-colors">Sul de Minas Gerais</a></li>
+              <li><a href="#regions" className="hover:text-white transition-colors">Chapada Diamantina</a></li>
+              <li><a href="#regions" className="hover:text-white transition-colors">Unique Cafés</a></li>
+              <li><a href="#regions" className="hover:text-white transition-colors">Latitude 13°</a></li>
             </ul>
           </div>
         </div>
@@ -90,8 +90,8 @@ const Footer: React.FC = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-stone-500">
           <p>&copy; 2026 Café de Fátima. Todos os direitos reservados.</p>
           <div className="mt-4 md:mt-0 space-x-6">
-            <a href="#privacy" className="hover:text-white">Privacidade</a>
-            <a href="#terms" className="hover:text-white">Termos de Uso</a>
+            <a href="#privacy" className="hover:text-white transition-colors">Privacidade</a>
+            <a href="#terms" className="hover:text-white transition-colors">Termos de Uso</a>
           </div>
         </div>
       </div>
