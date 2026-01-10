@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
             <div>
               <h2 className="text-4xl font-serif mb-6">Contato</h2>
               <p className="text-stone-400 font-light mb-12 leading-relaxed">
-                Estamos prontos para atender você. Escolha o canal de sua preferência ou visite nossa sede em Recife.
+                Estamos prontos para atender você. Escolha o canal de sua preferência.
               </p>
               
               <div className="space-y-10">
