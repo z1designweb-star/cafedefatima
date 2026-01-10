@@ -3,6 +3,8 @@ import React from 'react';
 import { SUBSCRIPTION_PLANS } from '../constants';
 
 const Subscriptions: React.FC = () => {
+  const whatsappNumber = "5581991605039";
+
   return (
     <div className="grid md:grid-cols-3 gap-8">
       {SUBSCRIPTION_PLANS.map((plan) => (
@@ -39,16 +41,18 @@ const Subscriptions: React.FC = () => {
             ))}
           </ul>
           
-          <button 
-            className={`w-full py-4 rounded-sm font-bold text-xs tracking-widest uppercase transition-all ${
+          <a 
+            href={`https://wa.me/${whatsappNumber}?text=Olá! Gostaria de saber mais e assinar o plano: ${plan.name}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`w-full py-4 rounded-sm font-bold text-xs tracking-widest uppercase transition-all text-center ${
               plan.id === 'tres-segredos' 
                 ? 'bg-coffee-dark text-white hover:bg-stone-800 shadow-md' 
                 : 'bg-stone-100 text-stone-800 hover:bg-stone-200'
             }`}
-            onClick={() => window.location.hash = '#contact'}
           >
             Assinar Agora
-          </button>
+          </a>
         </div>
       ))}
     </div>
