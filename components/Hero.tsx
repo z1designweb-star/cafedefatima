@@ -48,37 +48,37 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
   return (
     <div className="relative min-h-screen flex items-center hero-bg overflow-hidden pt-20">
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
         {/* Left Side: Content */}
-        <div className="relative z-10 space-y-8 max-w-2xl">
+        <div className="relative z-10 space-y-6 max-w-2xl py-8">
           <div>
-            <span className="inline-block bg-coffee-gold text-white text-[10px] font-bold px-3 py-1.5 rounded uppercase tracking-[0.2em] mb-6">
+            <span className="inline-block bg-coffee-gold text-white text-[9px] font-bold px-3 py-1.5 rounded-sm uppercase tracking-[0.2em] mb-4">
               CAFÉS DE ORIGEM CONTROLADA
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-[1.1] mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white leading-[1.15] mb-6">
               A Essência do Grão Brasileiro na <span className="italic">Sua Xícara.</span>
             </h1>
-            <p className="text-lg md:text-xl text-stone-300 font-light leading-relaxed max-w-xl">
+            <p className="text-base md:text-lg text-stone-300 font-light leading-relaxed max-w-lg">
               Exploração sensorial através de grãos selecionados das melhores altitudes do país. 
               Do Sul de Minas à Chapada Diamantina, levamos a história do Brasil até você.
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-5 pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a 
               href="#vendas-avulsas"
-              className="group bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-5 rounded-md font-bold text-sm tracking-[0.1em] uppercase transition-all flex items-center justify-center space-x-4 shadow-lg"
+              className="group bg-[#d97706] hover:bg-[#b45309] text-white px-6 py-4 rounded-md font-bold text-[11px] tracking-[0.15em] uppercase transition-all flex items-center justify-center space-x-3 shadow-lg"
             >
               <span>COMPRAR AGORA</span>
-              <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
             
             <a 
               href="#planos-assinatura" 
-              className="bg-black/40 backdrop-blur-md border border-white/20 hover:bg-black/60 text-white px-8 py-5 rounded-md font-bold text-sm tracking-[0.1em] uppercase transition-all text-center flex items-center justify-center"
+              className="bg-black/60 backdrop-blur-md border border-white/10 hover:bg-black/80 text-white px-6 py-4 rounded-md font-bold text-[11px] tracking-[0.15em] uppercase transition-all text-center flex items-center justify-center"
             >
               VER ASSINATURAS
             </a>
@@ -86,19 +86,19 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </div>
 
         {/* Right Side: Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 relative z-10 py-8">
           {cards.map((card, idx) => (
             <div 
               key={idx} 
-              className="bg-coffee-card backdrop-blur-xl p-8 border border-white/10 rounded-xl hover:border-coffee-gold/50 transition-all group"
+              className="bg-coffee-card backdrop-blur-xl p-6 lg:p-8 border border-white/10 rounded-xl hover:border-coffee-gold/50 transition-all group"
             >
-              <div className="mb-6 transform group-hover:scale-110 transition-transform origin-left">
+              <div className="mb-4 transform group-hover:scale-110 transition-transform origin-left">
                 {card.icon}
               </div>
-              <h3 className="text-xl font-serif font-bold text-white mb-3 tracking-tight">
+              <h3 className="text-lg lg:text-xl font-serif font-bold text-white mb-2 tracking-tight">
                 {card.title}
               </h3>
-              <p className="text-stone-400 text-sm leading-relaxed font-light">
+              <p className="text-stone-400 text-[13px] lg:text-sm leading-relaxed font-light">
                 {card.desc}
               </p>
             </div>
