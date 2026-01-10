@@ -90,8 +90,8 @@ const Footer: React.FC = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-stone-500">
           <p>&copy; 2026 Café de Fátima. Todos os direitos reservados.</p>
           <div className="mt-4 md:mt-0 space-x-6">
-            <a href="#" className="hover:text-white">Privacidade</a>
-            <a href="#" className="hover:text-white">Termos de Uso</a>
+            <a href="#privacy" className="hover:text-white">Privacidade</a>
+            <a href="#terms" className="hover:text-white">Termos de Uso</a>
           </div>
         </div>
       </div>

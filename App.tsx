@@ -7,9 +7,11 @@ import Subscriptions from './components/Subscriptions';
 import Footer from './components/Footer';
 import Store from './components/Store';
 import Contact from './components/Contact';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
 
 function App() {
-  const [currentView, setCurrentView] = useState<'home' | 'store' | 'contact'>('home');
+  const [currentView, setCurrentView] = useState<'home' | 'store' | 'contact' | 'privacy' | 'terms'>('home');
 
   // Simple hash-based router simulation
   useEffect(() => {
@@ -19,6 +21,10 @@ function App() {
         setCurrentView('store');
       } else if (hash === '#contact') {
         setCurrentView('contact');
+      } else if (hash === '#privacy') {
+        setCurrentView('privacy');
+      } else if (hash === '#terms') {
+        setCurrentView('terms');
       } else {
         setCurrentView('home');
       }
@@ -74,6 +80,10 @@ function App() {
         {currentView === 'store' && <Store />}
         
         {currentView === 'contact' && <Contact />}
+
+        {currentView === 'privacy' && <Privacy />}
+
+        {currentView === 'terms' && <Terms />}
       </main>
 
       <Footer />
