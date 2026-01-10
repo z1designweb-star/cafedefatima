@@ -9,7 +9,7 @@ export const PRODUCTS: Product[] = [
     origin: 'Chapada Diamantina',
     description: 'Representa o legítimo e tradicional sabor do café brasileiro. Produzido em altitudes acima de 1.000 metros com grãos 100% arábica. Torra clássica e acentuada, resultando em um café equilibrado, encorpado e de aroma marcante.',
     price: 43.00,
-    image: 'https://drive.google.com/uc?export=view&id=1eHv-byLImwkVbzINEMDq8y9oAu-qZLT-',
+    image: 'https://lh3.googleusercontent.com/d/1eHv-byLImwkVbzINEMDq8y9oAu-qZLT-',
     notes: ['Tradicional', 'Encorpado', '100% Arábica']
   },
   {
@@ -19,7 +19,7 @@ export const PRODUCTS: Product[] = [
     origin: 'Chapada Diamantina',
     description: 'Elaborado a partir de lotes exclusivos da Fazenda Progresso com grãos em maturação perfeita. Torra cuidadosa para preservar características aromáticas. Na xícara, destacam-se aromas florais, frutados e um corpo sedoso.',
     price: 43.00,
-    image: 'https://drive.google.com/uc?export=view&id=1K_NhwqAa1XDgScEVgwx1pUyjRvd4MYjO',
+    image: 'https://lh3.googleusercontent.com/d/1K_NhwqAa1XDgScEVgwx1pUyjRvd4MYjO',
     notes: ['Floral', 'Frutado', 'Corpo Sedoso']
   },
   {
@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     origin: 'Sul de Minas',
     description: 'Equilíbrio perfeito entre Unique Frutado e Bourbon Amarelo. Aroma intenso e sabor doce com notas de caramelo. Torra cor chocolate ao leite. Origem: Mantiqueira de Minas (Carmo de Minas). Safra 2025/2026. Nota SCA: 85-86.',
     price: 57.00,
-    image: 'https://drive.google.com/uc?export=view&id=1tf2zuoDLetE73H_w77ajjXpQIeDCMYtu',
+    image: 'https://lh3.googleusercontent.com/d/1tf2zuoDLetE73H_w77ajjXpQIeDCMYtu',
     notes: ['Caramelo', 'Bourbon Amarelo', 'Doce']
   },
   {
@@ -39,7 +39,7 @@ export const PRODUCTS: Product[] = [
     origin: 'Sul de Minas',
     description: 'Bebida doce com sensação aveludada. Amargor reduzido pela doçura natural da fruta. Café de origem única (Mantiqueira de Minas) com destaque para o corpo e notas de chocolate. Safra 2025/2026. Nota SCA: 85-86.',
     price: 57.00,
-    image: 'https://drive.google.com/uc?export=view&id=1BjVG9BmvTPQbH4r40cJ2TWZi0__ZxsZK',
+    image: 'https://lh3.googleusercontent.com/d/1BjVG9BmvTPQbH4r40cJ2TWZi0__ZxsZK',
     notes: ['Chocolate', 'Aveludado', 'Doçura Alta']
   }
 ];

@@ -6,16 +6,16 @@ const Regions: React.FC = () => {
     {
       title: 'Sul de Minas Gerais',
       brand: 'Unique Cafés',
-      // Link direto para visualização da imagem no Google Drive
-      image: 'https://drive.google.com/uc?id=1Iw5GnfYkeCSBT5KBDyUXKjLKrg34jP6l',
+      // Link direto para visualização da imagem no Google Drive usando lh3.googleusercontent.com
+      image: 'https://lh3.googleusercontent.com/d/1Iw5GnfYkeCSBT5KBDyUXKjLKrg34jP6l',
       description: 'A maior região produtora de cafés especiais do mundo. Com altitudes entre 900m e 1.250m, o solo fértil e clima ameno produzem cafés com corpo equilibrado, doçura acentuada e notas clássicas de chocolate e castanhas.',
       highlights: ['Altitude elevada', 'Tradição centenária', 'Corpo aveludado']
     },
     {
       title: 'Chapada Diamantina (Bahia)',
       brand: 'Latitude 13°',
-      // Link direto para visualização da imagem no Google Drive
-      image: 'https://drive.google.com/uc?id=10KXWOnkeGFuyqkQ3EfUiQPiHTv334UAc',
+      // Link direto para visualização da imagem no Google Drive usando lh3.googleusercontent.com
+      image: 'https://lh3.googleusercontent.com/d/10KXWOnkeGFuyqkQ3EfUiQPiHTv334UAc',
       description: 'Um terroir único no coração da Bahia. O microclima da Chapada Diamantina, com suas noites frias e dias ensolarados, permite uma maturação lenta dos frutos, resultando em cafés de alta complexidade, acidez brilhante e notas florais.',
       highlights: ['Microclima singular', 'Complexidade aromática', 'Sustentabilidade']
     }
@@ -32,7 +32,6 @@ const Regions: React.FC = () => {
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               loading="lazy"
               onError={(e) => {
-                // Caso o link do drive falhe ou expire, removemos a classe de escala e tentamos um placeholder temático
                 const target = e.target as HTMLImageElement;
                 target.src = region.title.includes('Minas') 
                   ? 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800'
