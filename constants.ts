@@ -46,27 +46,42 @@ export const PRODUCTS: Product[] = [
 
 export const SUBSCRIPTION_PLANS: SubscriptionPlan[] = [
   {
-    id: 'basic',
-    name: 'Entusiasta',
-    price: 89.00,
+    id: 'pastorinhos',
+    name: 'Assinatura Pastorinhos 🕊️',
+    price: 90.00,
     bags: 2,
-    description: 'Para quem está começando sua jornada no mundo dos cafés especiais.',
-    features: ['2 pacotes de 250g', 'Seleção rotativa', 'Guia de preparo mensal']
+    description: 'Simplicidade, devoção e sabor em perfeita harmonia. Inspirada na pureza dos pequenos gestos.',
+    features: [
+      '2 pacotes de 250g mensais',
+      'Variedade de origens e perfis',
+      'Envio mensal (frete à parte)',
+      'Experiência artesanal autêntica'
+    ]
   },
   {
-    id: 'standard',
-    name: 'Apreciador',
-    price: 159.00,
+    id: 'tres-segredos',
+    name: 'Assinatura Três Segredos ☕✨',
+    price: 125.00,
+    bags: 3,
+    description: 'Descubra os mistérios do sabor através de três origens distintas a cada gole.',
+    features: [
+      '3 pacotes de 250g selecionados',
+      'FRETE GRÁTIS incluso',
+      'Diversidade de torra e aromas',
+      'Histórias reveladas todo mês'
+    ]
+  },
+  {
+    id: 'milagre-sol',
+    name: 'Assinatura Milagre do Sol ☀️',
+    price: 160.00,
     bags: 4,
-    description: 'Ideal para quem consome café diariamente e busca variedade.',
-    features: ['4 pacotes de 250g', 'Frete Grátis', 'Acesso a lotes exclusivos', 'Brinde surpresa trimestral']
-  },
-  {
-    id: 'premium',
-    name: 'Mestre Cafeeiro',
-    price: 229.00,
-    bags: 6,
-    description: 'Para famílias ou escritórios que não abrem mão do melhor café do Brasil.',
-    features: ['6 pacotes de 250g', 'Frete Grátis Prioritário', 'Curadoria personalizada', '1 Workshop online semestral']
+    description: 'A revelação máxima do brilho e intensidade dos melhores terroirs brasileiros.',
+    features: [
+      '4 pacotes de 250g premium',
+      'FRETE GRÁTIS incluso',
+      'Torra de precisão artesanal',
+      'Seleção mais exclusiva da casa'
+    ]
   }
 ];
