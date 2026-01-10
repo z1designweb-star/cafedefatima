@@ -3,44 +3,44 @@ import { Product, SubscriptionPlan } from './types';
 
 export const PRODUCTS: Product[] = [
   {
-    id: '1',
-    name: 'Unique Clássico',
-    brand: 'Unique Cafés',
-    origin: 'Sul de Minas',
-    description: 'Um café equilibrado com notas de chocolate e caramelo, corpo aveludado e acidez cítrica moderada.',
-    price: 45.90,
+    id: 'lat-13-classico',
+    name: 'Latitude 13 Clássico 250g',
+    brand: 'Latitude 13°',
+    origin: 'Chapada Diamantina',
+    description: 'Representa o legítimo e tradicional sabor do café brasileiro. Produzido em altitudes acima de 1.000 metros com grãos 100% arábica. Torra clássica e acentuada, resultando em um café equilibrado, encorpado e de aroma marcante.',
+    price: 43.00,
     image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=800',
-    notes: ['Chocolate', 'Caramelo', 'Nozes']
+    notes: ['Tradicional', 'Encorpado', '100% Arábica']
   },
   {
-    id: '2',
-    name: 'Unique Frutado',
+    id: 'lat-13-blend',
+    name: 'Latitude 13 Blend 250g',
+    brand: 'Latitude 13°',
+    origin: 'Chapada Diamantina',
+    description: 'Elaborado a partir de lotes exclusivos da Fazenda Progresso com grãos em maturação perfeita. Torra cuidadosa para preservar características aromáticas. Na xícara, destacam-se aromas florais, frutados e um corpo sedoso.',
+    price: 43.00,
+    image: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&q=80&w=800',
+    notes: ['Floral', 'Frutado', 'Corpo Sedoso']
+  },
+  {
+    id: 'unique-blend',
+    name: 'Unique Blend 250g',
     brand: 'Unique Cafés',
     origin: 'Sul de Minas',
-    description: 'Perfil exótico com notas intensas de frutas vermelhas e aroma floral marcante.',
-    price: 52.00,
-    image: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&q=80&w=800',
-    notes: ['Frutas Vermelhas', 'Floral', 'Doçura Alta']
-  },
-  {
-    id: '3',
-    name: 'Latitude 13 Bio',
-    brand: 'Latitude 13°',
-    origin: 'Chapada Diamantina',
-    description: 'Cultivado de forma orgânica no coração da Bahia. Complexidade excepcional e doçura natural.',
-    price: 58.00,
+    description: 'Equilíbrio perfeito entre Unique Frutado e Bourbon Amarelo. Aroma intenso e sabor doce com notas de caramelo. Torra cor chocolate ao leite. Origem: Mantiqueira de Minas (Carmo de Minas). Safra 2025/2026. Nota SCA: 85-86.',
+    price: 57.00,
     image: 'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&q=80&w=800',
-    notes: ['Cítrico', 'Melaço', 'Equilibrado']
+    notes: ['Caramelo', 'Bourbon Amarelo', 'Doce']
   },
   {
-    id: '4',
-    name: 'Latitude 13 Reserva',
-    brand: 'Latitude 13°',
-    origin: 'Chapada Diamantina',
-    description: 'Lote selecionado das partes mais altas da fazenda, com notas florais de jasmim.',
-    price: 64.00,
+    id: 'unique-frutado',
+    name: 'Unique Frutado 250g',
+    brand: 'Unique Cafés',
+    origin: 'Sul de Minas',
+    description: 'Bebida doce com sensação aveludada. Amargor reduzido pela doçura natural da fruta. Café de origem única (Mantiqueira de Minas) com destaque para o corpo e notas de chocolate. Safra 2025/2026. Nota SCA: 85-86.',
+    price: 57.00,
     image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800',
-    notes: ['Jasmim', 'Mel', 'Acidez Brilhante']
+    notes: ['Chocolate', 'Aveludado', 'Doçura Alta']
   }
 ];
 
